@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing ">
+      <swiper
+         vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{imgs}}" wx:key="*this">
+          <swiper-item>
+            <image mode="aspectFit" src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+  </view>
+</view>
